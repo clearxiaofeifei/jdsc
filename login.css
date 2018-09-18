@@ -1,0 +1,383 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#box{
+    height: 670px;
+    width: 1340px;
+    border: 1px solid white;
+    position: relative;
+    background: white;
+}
+/*header布局开始、、、、、、、、、、、、、、、、*/
+#header{
+    height: 80px;
+}
+#logol{
+    float: left;
+    width: 180px;
+    height: 80px;
+    margin-left: 180px;
+    text-align: center;
+    line-height: 120px;
+    overflow: hidden;
+}
+#logol>img{
+    vertical-align: bottom;
+}
+#login{
+    float: right;
+    height: 80px;
+    width: 350px;
+     /*border: 1px solid chocolate;*/
+    position: relative;
+
+}
+#login>#user{
+    height:25px;
+    width: 200px;
+    /*border: 1px solid cornflowerblue;*/
+    position: absolute;
+    left: 0px;
+    bottom:0px;
+    font-size: small;
+}
+
+#login>#user a{
+    text-decoration: none;
+    color: #999999;
+}
+#login>#user a:hover{
+    text-decoration: underline;
+    color: #f22d05;
+}
+#reg{
+    float: left;
+    height: 80px;
+    width: 200px;
+    line-height: 80px;
+    font-size: 23px;
+    color: #5f5f5f;
+    text-indent: 20px;
+}
+#session{
+    height: 475px;
+
+    position: relative;
+}
+#img{
+    margin-left: 180px;
+}
+/*信息框.................................................*/
+#dlBar{
+    width: 350px;
+    height: 400px;
+    background: white;
+    position:absolute;
+    top: 35px;
+    left: 811px;
+}
+.hd{
+    height: 56px;
+    border-bottom: 1px solid #e7e7e7;
+    line-height: 56px;
+    text-align: center;
+}
+.hd ul li{
+    width: 175px;
+    float: left;
+}
+.hd ul li>a{
+    color: #818181;
+    text-decoration: none;
+    font-size: 18px;
+}
+.hd ul li>a:hover{
+    color:red;
+    font-weight: 600;
+}
+.lTer{
+    font-weight: 600;
+
+}
+.hd li.lTer a{
+    color: red;
+}
+#hs{
+    height: 270px;
+   /* background: grey;*/
+    border-bottom: 1px solid #e7e7e7;
+    position: absolute;
+    background: white;
+    z-index: 1;
+    /*display: none;*/
+}
+
+#show{
+    position:relative;
+    top: 30px;
+    z-index: 3;
+}
+#sJi{
+        margin-left: 50px;
+        margin-top: 20px;
+        position: absolute;
+        z-index: 2;
+}
+#mask{
+   width: 160px;
+    height: 160px;
+   background: rgba(27, 0, 4, 0.5);
+    position: absolute;
+    z-index: 4;
+    left: 93px;
+    top: 24px;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    display: none;
+}
+#mask>ul {
+    margin-top: 40px;
+}
+#sX{
+    background: #ff0939;
+    cursor: pointer;
+}
+
+#p1{
+    margin-top: 50px;
+    margin-left: 100px;
+    font-size: small;
+}
+#sJ{
+    color: red;
+    text-decoration: none;
+}
+
+#fla{
+    margin-top: 10px;
+    line-height: 25px;
+  /*  text-align: center;
+    clear: both;*/
+    margin-left: 50px;
+}
+#fla>li{
+    width: 100px;
+    height: 25px;
+    float: left;
+    text-align: center;
+}
+#fla>li>p{
+    float: left;
+}
+.fC{
+    color: #999999;
+    font-size: small;
+    padding-left: 5px;
+}
+#tP{
+    width: 25px;
+    height: 25px;
+    background:url("imglogin/qr-coagent.png") 0px 0px no-repeat;
+}
+#tP1{
+    width: 25px;
+    height: 25px;
+    background:url("imglogin/qr-coagent.png") -27px center no-repeat;
+}
+#tP2{
+    width: 25px;
+    height: 25px;
+    background:url("imglogin/qr-coagent.png") -54px center no-repeat;
+}
+
+#hf{
+    height: 62px;
+   /* background: #c0d491;*/
+    position: absolute;
+    top: 338px;
+
+}
+
+#tP3{
+    width: 19px;
+    height: 18px;
+    background:url("imglogin/QQ-weixin.png") 0px 0px no-repeat;
+}
+#tP4{
+    width: 19px;
+    height: 18px;
+    background:url("imglogin/QQ-weixin.png") -20px 0px no-repeat;
+}
+
+#tP5{
+    width: 16px;
+    height: 16px;
+    background:url("imglogin/pwd-icons-new.png") -104px -75px no-repeat;
+}
+#rst{
+   padding-left: 40px;
+    line-height: 16px;
+}
+.fC3{
+
+}
+.fC3>a{
+    color: red;
+    text-decoration: none;
+}
+.fC3>a:hover{
+    text-decoration:underline;
+}
+#fla2{
+    text-align: center;
+}
+#fla2>li{
+    width: 80px;
+    height: 25px;
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#fla2>li>p{
+    float: left;
+}
+.fC2{
+    font-size: small;
+    padding-left: 5px;
+}
+.fC2>a{
+    color: #999999;
+    text-decoration: none;
+}
+.fC2>a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/*dL开始..........................................................*/
+#dL{
+    width: 350px;
+    height: 270px;
+    /* background: grey;*/
+    border-bottom: 1px solid #e7e7e7;
+    /* background: red;*/
+    position:absolute;
+    top: 58px;
+    z-index: 0;
+}
+#users{
+    width: 38px;
+    height: 38px;
+    border: 0.5px solid #999999;
+    background: url("imglogin/pwd-icons-new.png") 0px 0px no-repeat;
+}
+#password{
+    width: 38px;
+    height: 38px;
+    border: 0.5px solid #999999;
+    background: url("imglogin/pwd-icons-new.png") -48px 0px no-repeat;
+}
+#dL ul li{
+    width: 350px;
+    height: 40px;
+   /* border: 1px solid crimson;*/
+
+}
+.inp{
+    height: 40px;
+    outline: none;
+    width: 270px;
+    float: left;
+    margin-left: -1px;
+}
+#dL ul li p{
+    float: left;
+    margin-left: 20px;
+}
+#loseP{
+    height: 20px;
+    font-size: small;
+    /*background: royalblue;*/
+    margin-top: 20px;
+
+}
+#loseP>a{
+    text-decoration: none;
+    color: #8b8b8b;
+    margin-left: 275px;
+}
+#loseP>a:hover{
+    text-decoration: underline;
+}
+#sub{
+    width: 310px;
+    height: 36px;
+    background: #e20432;
+    text-align: center;
+    line-height: 36px;
+    margin-left: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+
+    letter-spacing: 20px;
+}
+#sub>a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+/*footer  开始、、、、、、、、、、、、、、、、、、、、、、、、*/
+#footer{
+    width: 1340px;
+    height: 100px;
+    /*border: 1px solid chocolate;*/
+    margin-top: -140px;
+    text-align: center;
+    position: relative;
+    top: 120px;;
+}
+.links{
+    margin-top: 45px;
+    color: #999999;
+    font-size: small;
+}
+.links a{
+    text-decoration: none;
+    color: #999999;
+    font-size: small;
+    padding: 0px 10px;
+
+}
+.links a:hover{
+    text-decoration:underline;
+    color: red;
+}
+.copyright{
+    margin-top: 25px;
+    color: #999999;
+    font-size: small;
+}
+#bCuo{
+    width: 306px;
+    height: 23px;
+    border: 1px solid crimson;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+#cWq{
+    position: absolute;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    background: url("imglogin/pwd-icons-new.png") -104px -49px no-repeat;
+}
+#fontS{
+    font-size: 12px;
+    margin-left: 60px;
+    color: #666666;
+}

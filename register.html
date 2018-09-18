@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="register.css" type="text/css">
+</head>
+<body>
+<div id="box">
+    <div id="header">
+        <div id="logol"><a href="./index.html"><img src="imagesReg/logol.png"></a>
+        </div>
+        <div id="reg"> 欢迎注册</div>
+        <div id="login">
+            <div id="user"><span>已有账号？</span><a href="login.html">请登录</a></div>
+        </div>
+    </div><!--//login结束-->
+
+    <div id="session">
+        <div id="left_side">
+            <form action="" id="myForm">
+                <div class="inp">用户名</div>
+                <input type="text" placeholder="你的账号名和登录名" id="userName">
+            </form>
+            <p id="users"></p>
+            <form action="">
+                <div class="inp">设置密码</div>
+                <input type="password" placeholder="建议至少使用两种字符结合" id="password">
+            </form>
+            <p id="passwords"></p>
+            <form action="">
+                <div class="inp">确认密码</div>
+                <input type="password" placeholder="请再次输入密码" id="rPass">
+            </form>
+            <p id="rP"></p>
+            <form action="">
+                <div class="inp3" id="inp3">
+                    <div id="span7" onclick="choose()">中国0086&nbsp;﹀</div>
+                    <div id="country" style="display: none">
+                        <input type="text" placeholder="搜索你的国家和地区" class="inp4">
+                        <ul>
+                            <li class="select">A</li>
+                            <li>B</li>
+                            <li>C</li>
+                            <li>D</li>
+                            <li>E</li>
+                            <li>F</li>
+                            <li>G</li>
+                            <li>H</li>
+                            <li>J</li>
+                            <li>K</li>
+                            <li>L</li>
+                            <li>M</li>
+                            <li>N</li>
+                            <li>P</li>
+                            <li>R</li>
+                            <li>S</li>
+                            <li>T</li>
+                            <li>W</li>
+                            <li>X</li>
+                            <li>Y</li>
+                            <li>Z</li>
+                        </ul>
+
+                        <p id="zM"><span id="span6">A</span>
+                        <hr>
+                        </p>
+                        <div id="cons">
+                            <div class="num" style="display: block" id="jia">
+                                <dl>
+                                    <dt id="dt1" class="dt"><span>澳大利亚</span> <span class="numCode">0061</span></dt>
+                                    <dt id="dt2" class="dt"><span>阿富汗</span> <span class="numCode">0093</span></dt>
+                                    <dt id="dt3" class="dt"><span>阿赛拜疆</span> <span class="numCode">0994</span></dt>
+                                    <dt id="dt4" class="dt"><span>阿曼</span> <span class="numCode">0968</span></dt>
+                                    <dt id="dt5" class="dt"><span>阿联酋</span> <span class="numCode">0071</span></dt>
+                                    <dt id="dt6" class="dt"><span>安圭拉</span> <span class="numCode">1264</span></dt>
+                                    <dt id="dt7" class="dt"><span>安提瓜和巴布达</span> <span class="numCode">1268</span></dt>
+                                    <dt id="dt8" class="dt"><span>阿鲁巴</span> <span class="numCode">0297</span></dt>
+                                    <dt id="dt9" class="dt"><span>阿根廷</span> <span class="numCode">0054</span></dt>
+                                    <dt id="dt10" class="dt"><span>阿尔巴利亚</span> <span class="numCode">0355</span></dt>
+                                    <dt id="dt11" class="dt"><span>奥地利</span> <span class="numCode">0043</span></dt>
+                                    <dt id="dt12" class="dt"><span>爱尔兰</span> <span class="numCode">0353</span></dt>
+                                    <dt id="dt13" class="dt"><span>安道尔</span> <span class="numCode">0376</span></dt>
+                                    <dt id="dt14" class="dt"><span>艾沙利亚</span> <span class="numCode">0372</span></dt>
+                                    <dt id="dt15" class="dt"><span>安哥拉</span> <span class="numCode">0244</span></dt>
+                                    <dt id="dt16" class="dt"><span>阿森松岛</span> <span class="numCode">0247</span></dt>
+                                    <dt id="dt17" class="dt"><span>埃及</span> <span class="numCode">0020</span></dt>
+                                    <dt id="dt18" class="dt"><span>埃塞俄比亚</span> <span class="numCode">0251</span></dt>
+                                    <dt id="dt19" class="dt"><span>阿尔及利亚</span> <span class="numCode">0213</span></dt>
+                                </dl>
+                            </div>
+                            <div style="display:none" id="jia1">
+                                <dl>
+                                    <dt id="dt20" class="dt"><span>巴林</span> <span class="numCode">0973</span></dt>
+                                    <dt id="dt21" class="dt"><span>不丹</span> <span class="numCode">0095</span></dt>
+                                    <dt id="dt22" class="dt"><span>巴基斯坦</span> <span class="numCode">0092</span></dt>
+                                    <dt id="dt23" class="dt"><span>巴勒斯坦</span> <span class="numCode">0970</span></dt>
+                                    <dt id="dt24" class="dt"><span>巴西</span> <span class="numCode">0055</span></dt>
+                                    <dt id="dt25" class="dt"><span>巴哈马</span> <span class="numCode">1242</span></dt>
+                                    <dt id="dt26" class="dt"><span>巴巴多斯</span> <span class="numCode">1268</span></dt>
+                                    <dt id="dt27" class="dt"><span>柏利兹</span> <span class="numCode">0501</span></dt>
+                                    <dt id="dt28" class="dt"><span>百慕大群岛</span> <span class="numCode">1441</span></dt>
+                                    <dt id="dt29" class="dt"><span>巴拿马</span> <span class="numCode">0355</span></dt>
+                                    <dt id="dt30" class="dt"><span>波多黎各</span> <span class="numCode">0507</span></dt>
+                                    <dt id="dt31" class="dt"><span>玻利维亚</span> <span class="numCode">0591</span></dt>
+                                    <dt id="dt32" class="dt"><span>巴拉圭</span> <span class="numCode">0595</span></dt>
+                                    <dt id="dt33" class="dt"><span>比利时</span> <span class="numCode">0032</span></dt>
+                                    <dt id="dt34" class="dt"><span>波斯利亚和黑塞哥维那</span> <span class="numCode">0387</span>
+                                    </dt>
+                                    <dt id="dt35" class="dt"><span>保加利亚</span> <span class="numCode">0359</span></dt>
+                                    <dt id="dt36" class="dt"><span>冰岛</span> <span class="numCode">0354</span></dt>
+                                    <dt id="dt37" class="dt"><span>波兰</span> <span class="numCode">0048</span></dt>
+                                    <dt id="dt38" class="dt"><span>白俄罗斯</span> <span class="numCode">0375</span></dt>
+                                    <dt id="dt39" class="dt"><span>巴布亚新几内亚</span> <span class="numCode">0675</span></dt>
+                                    <dt id="dt40" class="dt"><span>贝宁</span> <span class="numCode">0229</span></dt>
+                                    <dt id="dt41" class="dt"><span>博茨瓦纳</span> <span class="numCode">0267</span></dt>
+                                    <dt id="dt42" class="dt"><span>布基纳法索</span> <span class="numCode">0226</span></dt>
+                                    <dt id="dt43" class="dt"><span>布隆迪</span> <span class="numCode">0257</span></dt>
+                                </dl>
+                            </div>
+                            <div style="display:none" id="jia2">
+                                <dl>
+                                    <dt id="dt44" class="dt"><span>朝鲜</span> <span class="numCode">0850</span></dt>
+                                    <dt id="dt45" class="dt"><span>赤道几内亚</span> <span class="numCode">0240</span></dt>
+                                </dl>
+                            </div>
+                            <div style="display:none" id="jia3">
+                                <dl>
+                                    <dt id="dt46" class="dt"><span>东帝汶</span> <span class="numCode">0670</span></dt>
+                                    <dt id="dt47" class="dt"><span>多米尼克</span> <span class="numCode">1767</span></dt>
+                                    <dt id="dt48" class="dt"><span>多米尼加</span> <span class="numCode">1849</span></dt>
+                                    <dt id="dt49" class="dt"><span>丹麦</span> <span class="numCode">0045</span></dt>
+                                    <dt id="dt50" class="dt"><span>德国</span> <span class="numCode">0049</span></dt>
+                                    <dt id="dt51" class="dt"><span>多哥</span> <span class="numCode">0228</span></dt>
+                                </dl>
+                            </div>
+                            <div style="display:none" id="jia4">
+                                <dl>
+                                    <dt id="dt52" class="dt"><span>厄瓜多尔</span> <span class="numCode">0593</span></dt>
+                                    <dt id="dt53" class="dt"><span>俄罗斯</span> <span class="numCode">0007</span></dt>
+                                    <dt id="dt54" class="dt"><span>厄立特里亚</span> <span class="numCode">0291</span></dt>
+                                </dl>
+                            </div>
+                            <div style="display:none" id="jia5">
+                                <dl>
+                                    <dt id="dt55" class="dt"><span>芬兰</span> <span class="numCode">0358</span></dt>
+                                    <dt id="dt56" class="dt"><span>法国</span> <span class="numCode">0033</span></dt>
+                                    <dt id="dt57" class="dt"><span>梵蒂冈</span> <span class="numCode">0396</span></dt>
+                                    <dt id="dt58" class="dt"><span>斐济群岛</span> <span class="numCode">0679</span></dt>
+                                    <dt id="dt59" class="dt"><span>法属波尼利西亚</span> <span class="numCode">0689</span></dt>
+                                    <dt id="dt60" class="dt"><span>佛得角</span> <span class="numCode">0238</span></dt>
+                                </dl>
+                            </div>
+                            <div style="display:none" id="jia6">
+                                <dl>
+                                    <dt id="dt61" class="dt"><span>格鲁吉亚</span> <span class="numCode">0995</span></dt>
+                                    <dt id="dt62" class="dt"><span>哥斯达黎加</span> <span class="numCode">0506</span></dt>
+                                    <dt id="dt63" class="dt"><span>古巴</span> <span class="numCode">0053</span></dt>
+                                    <dt id="dt64" class="dt"><span>格陵兰</span> <span class="numCode">0299</span></dt>
+                                    <dt id="dt65" class="dt"><span>格林纳达</span> <span class="numCode">1473</span></dt>
+                                    <dt id="dt66" class="dt"><span>瓜德罗普</span> <span class="numCode">0590</span></dt>
+                                    <dt id="dt67" class="dt"><span>哥伦比亚</span> <span class="numCode">0057</span></dt>
+                                    <dt id="dt68" class="dt"><span>圭亚那</span> <span class="numCode">0592</span></dt>
+                                    <dt id="dt69" class="dt"><span>关岛</span> <span class="numCode">1671</span></dt>
+                                    <dt id="dt70" class="dt"><span>冈比亚</span> <span class="numCode">0220</span></dt>
+                                </dl>
+                            </div>
+                            <div style="display:none" id="jia7">
+                                <dl>
+                                    <dt id="dt71" class="dt"><span>韩国</span> <span class="numCode">0082</span></dt>
+                                    <dt id="dt72" class="dt"><span>哈萨克斯坦</span> <span class="numCode">0007</span></dt>
+                                    <dt id="dt73" class="dt"><span>海地</span> <span class="numCode">0509</span></dt>
+                                    <dt id="dt74" class="dt"><span>洪都拉斯</span> <span class="numCode">0504</span></dt>
+                                    <dt id="dt75" class="dt"><span>荷属安的列斯群岛</span> <span class="numCode">0599</span>
+                                    </dt>
+                                    <dt id="dt76" class="dt"><span>黑山</span> <span class="numCode">0382</span></dt>
+                                    <dt id="dt77" class="dt"><span>荷兰</span> <span class="numCode">0031</span></dt>
+                                </dl>
+                            </div>
+                            <div style="display:none" id="jia8">
+                                <dl>
+                                    <dt id="dt78" class="dt"><span>加拿大</span> <span class="numCode">0001</span></dt>
+                                    <dt id="dt79" class="dt"><span>柬埔寨</span> <span class="numCode">0855</span></dt>
+                                    <dt id="dt80" class="dt"><span>吉尔吉斯坦</span> <span class="numCode">0220</span></dt>
+                                    <dt id="dt81" class="dt"><span>捷克</span> <span class="numCode">0420</span></dt>
+                                    <dt id="dt82" class="dt"><span>基里巴斯</span> <span class="numCode">0686</span></dt>
+                                    <dt id="dt83" class="dt"><span>吉布提</span> <span class="numCode">0220</span></dt>
+                                    <dt id="dt84" class="dt"><span>加蓬</span> <span class="numCode">0241</span></dt>
+                                    <dt id="dt85" class="dt"><span>加纳</span> <span class="numCode">0233</span></dt>
+                                    <dt id="dt86" class="dt"><span>几内亚</span> <span class="numCode">0220</span></dt>
+                                    <dt id="dt87" class="dt"><span>几内亚比绍</span> <span class="numCode">0245</span></dt>
+                                    <dt id="dt88" class="dt"><span>津巴布韦</span> <span class="numCode">0263</span></dt>
+                                </dl>
+                            </div>
+                            <div style="display:none" id="jia9">
+                                <dl>
+                                    <dt id="dt89" class="dt"><span>科威特</span> <span class="numCode">0965</span></dt>
+                                    <dt id="dt90" class="dt"><span>卡塔尔</span> <span class="numCode">0974</span></dt>
+                                    <dt id="dt91" class="dt"><span>开曼群岛</span> <span class="numCode">1345</span></dt>
+                                    <dt id="dt92" class="dt"><span>克罗地亚</span> <span class="numCode">0385</span></dt>
+                                    <dt id="dt93" class="dt"><span>库克群岛</span> <span class="numCode">0682</span></dt>
+                                    <dt id="dt94" class="dt"><span>喀麦隆</span> <span class="numCode">0237</span></dt>
+                                    <dt id="dt95" class="dt"><span>科特迪瓦</span> <span class="numCode">0225</span></dt>
+                                    <dt id="dt96" class="dt"><span>肯尼亚</span> <span class="numCode">0254</span></dt>
+                                    <dt id="dt97" class="dt"><span>科摩罗</span> <span class="numCode">0269</span></dt>
+                                </dl>
+                            </div>
+                            <div style="display:none" id="jia10">
+                                <dl>
+                                    <dt id="dt98" class="dt"><span>罗马尼亚</span> <span class="numCode">0040</span></dt>
+                                    <dt id="dt99" class="dt"><span>列支敦士登</span> <span class="numCode">4175</span></dt>
+                                    <dt id="dt100" class="dt"><span>黎巴嫩</span> <span class="numCode">0245</span></dt>
+                                    <dt id="dt101" class="dt"><span>老挝</span> <span class="numCode">0856</span></dt>
+                                    <dt id="dt102" class="dt"><span>卢森堡</span> <span class="numCode">0352</span></dt>
+                                    <dt id="dt103" class="dt"><span>拉脱维亚</span> <span class="numCode">0371</span></dt>
+                                    <dt id="dt104" class="dt"><span>立陶宛</span> <span class="numCode">0370</span></dt>
+                                    <dt id="dt105" class="dt"><span>莱索托</span> <span class="numCode">0266</span></dt>
+                                    <dt id="dt106" class="dt"><span>利比里亚</span> <span class="numCode">0231</span></dt>
+                                    <dt id="dt107" class="dt"><span>利比亚</span> <span class="numCode">0218</span></dt>
+                                    <dt id="dt108" class="dt"><span>留尼旺岛</span> <span class="numCode">0262</span></dt>
+                                </dl>
+                            </div>
+                            <div style="display:none" id="jia11">
+                                <dl>
+                                    <dt id="dt109" class="dt"><span>马来西亚</span> <span class="numCode">0060</span></dt>
+                                    <dt id="dt110" class="dt"><span>美国</span> <span class="numCode">0001</span></dt>
+                                    <dt id="dt111" class="dt"><span>孟加拉</span> <span class="numCode">0880</span></dt>
+                                    <dt id="dt112" class="dt"><span>蒙古</span> <span class="numCode">0976</span></dt>
+                                    <dt id="dt113" class="dt"><span>马尔代夫</span> <span class="numCode">0960</span></dt>
+                                    <dt id="dt114" class="dt"><span>马提尼克</span> <span class="numCode">0596</span></dt>
+                                    <dt id="dt115" class="dt"><span>墨西哥</span> <span class="numCode">0052</span></dt>
+                                    <dt id="dt116" class="dt"><span>蒙特塞拉特</span> <span class="numCode">1664</span></dt>
+                                    <dt id="dt117" class="dt"><span>美属维尔京群岛</span> <span class="numCode">1340</span>
+                                    </dt>
+                                    <dt id="dt118" class="dt"><span>秘鲁</span> <span class="numCode">0051</span></dt>
+                                    <dt id="dt119" class="dt"><span>马耳他</span> <span class="numCode">0356</span></dt>
+
+                                    <dt id="dt120" class="dt"><span>摩纳哥</span> <span class="numCode">0377</span></dt>
+                                    <dt id="dt121" class="dt"><span>马其顿</span> <span class="numCode">0389</span></dt>
+                                    <dt id="dt122" class="dt"><span>摩尔多瓦</span> <span class="numCode">0373</span></dt>
+                                    <dt id="dt123" class="dt"><span>美属萨摩亚</span> <span class="numCode">0684</span></dt>
+                                    <dt id="dt124" class="dt"><span>密克罗尼西亚</span> <span class="numCode">0691</span></dt>
+                                    <dt id="dt125" class="dt"><span>马绍尔群岛</span> <span class="numCode">0692</span></dt>
+                                    <dt id="dt126" class="dt"><span>马达加斯加</span> <span class="numCode">0261</span></dt>
+                                    <dt id="dt127" class="dt"><span>马里</span> <span class="numCode">0223</span></dt>
+                                    <dt id="dt128" class="dt"><span>毛里求斯</span> <span class="numCode">0230</span></dt>
+                                    <dt id="dt129" class="dt"><span>摩洛哥</span> <span class="numCode">0212</span></dt>
+                                    <dt id="dt130" class="dt"><span>莫桑比克</span> <span class="numCode">0258</span></dt>
+                                    <dt id="dt131" class="dt"><span>毛里塔尼亚</span> <span class="numCode">0222</span></dt>
+                                </dl>
+
+                            </div>
+                            <div style="display:none" id="jia12">
+                                <dl>
+                                    <dt id="dt132" class="dt"><span>尼泊尔</span> <span class="numCode">0977</span></dt>
+                                    <dt id="dt133" class="dt"><span>尼加拉瓜</span> <span class="numCode">0505</span></dt>
+                                    <dt id="dt134" class="dt"><span>挪威</span> <span class="numCode">0047</span></dt>
+                                    <dt id="dt135" class="dt"><span>瑙鲁</span> <span class="numCode">0674</span></dt>
+                                    <dt id="dt136" class="dt"><span>纽埃岛</span> <span class="numCode">0683</span></dt>
+                                    <dt id="dt137" class="dt"><span>诺福克岛</span> <span class="numCode">6723</span></dt>
+                                    <dt id="dt138" class="dt"><span>尼日尔</span> <span class="numCode">0227</span></dt>
+                                    <dt id="dt139" class="dt"><span>尼日利亚</span> <span class="numCode">0234</span></dt>
+                                    <dt id="dt140" class="dt"><span>纳米比亚</span> <span class="numCode">0264</span></dt>
+                                    <dt id="dt141" class="dt"><span>南非</span> <span class="numCode">0027</span></dt>
+                                    <dt id="dt142" class="dt"><span>南苏丹</span> <span class="numCode">0211</span></dt>
+                                </dl>
+                            </div>
+                            <div style="display:none" id="jia13">
+                                <dl>
+                                    <dt id="dt143" class="dt"><span>葡萄牙</span> <span class="numCode">0351</span></dt>
+                                    <dt id="dt144" class="dt"><span>帕劳</span> <span class="numCode">0680</span></dt>
+                                </dl>
+                            </div>
+                            <div style="display:none" id="jia14">
+                                <dl>
+                                    <dt id="dt145" class="dt"><span>日本</span> <span class="numCode">0081</span></dt>
+                                    <dt id="dt146" class="dt"><span>瑞典</span> <span class="numCode">0046</span></dt>
+                                    <dt id="dt147" class="dt"><span>瑞士</span> <span class="numCode">0041</span></dt>
+                                </dl>
+                            </div>
+                            <div style="display:none" id="jia15">
+                                <dl>
+                                    <dt id="dt148" class="dt"><span>塞浦路斯</span> <span class="numCode">0357</span></dt>
+                                    <dt id="dt149" class="dt"><span>沙特阿拉伯</span> <span class="numCode">0966</span></dt>
+                                    <dt id="dt150" class="dt"><span>斯里兰卡</span> <span class="numCode">0094</span></dt>
+                                    <dt id="dt151" class="dt"><span>萨尔瓦多</span> <span class="numCode">0503</span></dt>
+                                    <dt id="dt152" class="dt"><span>圣文森特和格林纳丁斯</span> <span class="numCode">1784</span>
+                                    </dt>
+                                    <dt id="dt153" class="dt"><span>圣卢西亚</span> <span class="numCode">1758</span></dt>
+                                    <dt id="dt154" class="dt"><span>圣基茨和尼维斯</span> <span class="numCode">1869</span>
+                                    </dt>
+
+                                    <dt id="dt155" class="dt"><span>苏里南</span> <span class="numCode">0597</span></dt>
+                                    <dt id="dt156" class="dt"><span>圣马力诺</span> <span class="numCode">0378</span></dt>
+                                    <dt id="dt157" class="dt"><span>塞尔维亚</span> <span class="numCode">0381</span></dt>
+                                    <dt id="dt158" class="dt"><span>斯洛文尼亚</span> <span class="numCode">0386</span></dt>
+                                    <dt id="dt159" class="dt"><span>斯洛伐克</span> <span class="numCode">1784</span></dt>
+                                    <dt id="dt160" class="dt"><span>所罗门群岛</span> <span class="numCode">0677</span></dt>
+                                    <dt id="dt161" class="dt"><span>萨摩亚</span> <span class="numCode">0685</span></dt>
+
+                                    <dt id="dt162" class="dt"><span>圣多美和普林西比</span> <span class="numCode">0239</span>
+                                    </dt>
+                                    <dt id="dt163" class="dt"><span>圣马力诺</span> <span class="numCode">0378</span></dt>
+                                    <dt id="dt164" class="dt"><span>塞内加尔</span> <span class="numCode">0221</span></dt>
+                                    <dt id="dt165" class="dt"><span>塞舌尔</span> <span class="numCode">0248</span></dt>
+                                    <dt id="dt166" class="dt"><span>塞拉利昂</span> <span class="numCode">0232</span></dt>
+                                    <dt id="dt167" class="dt"><span>苏丹</span> <span class="numCode">0249</span></dt>
+                                    <dt id="dt168" class="dt"><span>思威士兰</span> <span class="numCode">0268</span></dt>
+                                    <dt id="dt169" class="dt"><span>索马里</span> <span class="numCode">0252</span></dt>
+                                </dl>
+                            </div>
+                            <div style="display:none" id="jia16">
+                                <dt id="dt170" class="dt"><span>泰国</span> <span class="numCode">0066</span></dt>
+                                <dt id="dt171" class="dt"><span>塔吉克斯坦</span> <span class="numCode">0992</span></dt>
+                                <dt id="dt172" class="dt"><span>土库曼斯坦</span> <span class="numCode">0993</span></dt>
+                                <dt id="dt173" class="dt"><span>特克斯和凯科斯群岛</span> <span class="numCode">1649</span></dt>
+                                <dt id="dt174" class="dt"><span>特立尼达和多巴哥</span> <span class="numCode">1868</span></dt>
+                                <dt id="dt175" class="dt"><span>托克劳</span> <span class="numCode">0690</span></dt>
+                                <dt id="dt176" class="dt"><span>汤加</span> <span class="numCode">0676</span></dt>
+                                <dt id="dt177" class="dt"><span>图瓦卢</span> <span class="numCode">0688</span></dt>
+                                <dt id="dt178" class="dt"><span>坦桑尼亚</span> <span class="numCode">0255</span></dt>
+                                <dt id="dt179" class="dt"><span>突尼斯</span> <span class="numCode">0216</span></dt>
+                                </dl>
+                            </div>
+                            <div style="display:none" id="jia17">
+                                <dl>
+                                    <dt id="dt180" class="dt"><span>文莱</span> <span class="numCode">0673</span></dt>
+                                    <dt id="dt181" class="dt"><span>乌兹别克斯坦</span> <span class="numCode">0998</span></dt>
+                                    <dt id="dt182" class="dt"><span>委内瑞拉</span> <span class="numCode">0058</span></dt>
+                                    <dt id="dt183" class="dt"><span>危地马拉</span> <span class="numCode">0502</span></dt>
+                                    <dt id="dt184" class="dt"><span>乌拉圭</span> <span class="numCode">0598</span></dt>
+                                    <dt id="dt185" class="dt"><span>乌克兰</span> <span class="numCode">0380</span></dt>
+                                    <dt id="dt186" class="dt"><span>瓦努瓦图</span> <span class="numCode">0678</span></dt>
+                                    <dt id="dt187" class="dt"><span>瓦利斯和富图纳</span> <span class="numCode">0681</span>
+                                    </dt>
+                                    <dt id="dt188" class="dt"><span>乌干达</span> <span class="numCode">0256</span></dt>
+                                </dl>
+                            </div>
+                            <div style="display:none" id="jia18">
+                                <dl>
+                                    <dt id="dt189" class="dt"><span>新加坡</span> <span class="numCode">0065</span></dt>
+                                    <dt id="dt190" class="dt"><span>新西兰</span> <span class="numCode">0064</span></dt>
+                                    <dt id="dt191" class="dt"><span>叙利亚</span> <span class="numCode">0963</span></dt>
+
+                                    <dt id="dt192" class="dt"><span>希腊</span> <span class="numCode">0030</span></dt>
+                                    <dt id="dt193" class="dt"><span>匈牙利</span> <span class="numCode">0036</span></dt>
+                                    <dt id="dt194" class="dt"><span>西班牙</span> <span class="numCode">0034</span></dt>
+
+                                    <dt id="dt195" class="dt"><span>新喀里多尼亚</span> <span class="numCode">0687</span></dt>
+                                    <dt id="dt196" class="dt"><span>西撒哈拉</span> <span class="numCode">0210</span></dt>
+
+                                </dl>
+                            </div>
+                            <div style="display:none" id="jia19">
+                                <dl>
+                                    <dt id="dt197" class="dt"><span>印度</span> <span class="numCode">0091</span></dt>
+                                    <dt id="dt198" class="dt"><span>印度尼西亚</span> <span class="numCode">0062</span></dt>
+                                    <dt id="dt199" class="dt"><span>越南</span> <span class="numCode">0084</span></dt>
+                                    <dt id="dt200" class="dt"><span>伊朗</span> <span class="numCode">0091</span></dt>
+                                    <dt id="dt201" class="dt"><span>伊拉克</span> <span class="numCode">0091</span></dt>
+                                    <dt id="dt202" class="dt"><span>约旦</span> <span class="numCode">0091</span></dt>
+                                    <dt id="dt203" class="dt"><span>亚美尼亚</span> <span class="numCode">0374</span></dt>
+                                    <dt id="dt204" class="dt"><span>以色列</span> <span class="numCode">0972</span></dt>
+                                    <dt id="dt205" class="dt"><span>也门</span> <span class="numCode">0967</span></dt>
+                                    <dt id="dt206" class="dt"><span>牙买加</span> <span class="numCode">1876</span></dt>
+                                    <dt id="dt207" class="dt"><span>英属维京群岛</span> <span class="numCode">1284</span></dt>
+                                    <dt id="dt208" class="dt"><span>意大利</span> <span class="numCode">0039</span></dt>
+                                    <dt id="dt209" class="dt"><span>英国</span> <span class="numCode">0044</span></dt>
+                                </dl>
+                            </div>
+                            <div style="display:none" id="jia20">
+                                <dl>
+                                    <dt id="dt210" class="dt"><span>中国</span> <span class="numCode">0886</span></dt>
+                                    <dt id="dt211" class="dt"><span>中国台湾</span> <span class="numCode">0886</span></dt>
+                                    <dt id="dt212" class="dt"><span>中国香港</span> <span class="numCode">0852</span></dt>
+                                    <dt id="dt213" class="dt"><span>中国澳门</span> <span class="numCode">0853</span></dt>
+                                    <dt id="dt214" class="dt"><span>智利</span> <span class="numCode">0056</span></dt>
+                                    <dt id="dt215" class="dt"><span>中非</span> <span class="numCode">0236</span></dt>
+                                    <dt id="dt216" class="dt"><span>乍得</span> <span class="numCode">0235</span></dt>
+                                    <dt id="dt217" class="dt"><span>赞比亚</span> <span class="numCode">0260</span></dt>
+                                </dl>
+                            </div>
+                            <div style="display:none"></div>
+                            <div style="display:none"></div>
+                            <div style="display:none"></div>
+                            <div style="display:none"></div>
+                            <div style="display:none"></div>
+                            <div style="display:none"></div>
+                            <div style="display:none"></div>
+                            <div style="display:none"></div>
+                            <div style="display:none"></div>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" placeholder="建议使用常用手机" id="tel">
+            </form>
+            <p id="phone"></p>  <a href="#" id="emailName">邮箱验证</a>
+            <form action="">
+                <div class="inp">验证码</div>
+                <input type="text" placeholder="请输入验证码" class="inp2" id="codeWord">
+                <span id="span2">验证码</span>
+            </form>
+
+            <p id="yz"></p>
+            <form action="">
+                <div class="inp">手机验证码</div>
+                <input type="text" placeholder="请输入手机验证码" class="inp2">
+                <span id="span3">获取验证码</span>
+            </form>
+            <div id="xY"><input type="checkbox" checked>阅读并同意
+                <a href="javascript:void (0)">《京东用户注册协议》
+               <!-- <div id="xieY">
+
+                </div>-->
+                </a>
+                <a href="#">《隐私政策》</a>
+            </div>
+            <div id="button">立即注册</div>
+        </div><!--//left_side结束-->
+        <div id="right_side">
+            <ul>
+                <li id="li"><img src="imagesReg/zuche.png">
+                    <p id="span4"><a href="#">企业用户注册</a></p></li>
+                <br> <br>
+                <li><img src="imagesReg/全球.png"><a href="#"><span class="span5">INTERNATIONAL</span> <br>
+                    <span class="span5">CUSTOMERS</span></a></li>
+            </ul>
+        </div>
+    </div><!--right_side 结束-->
+    <div id="juan">
+        <a href="#">
+            <div id="diao">
+                <img src="imagesReg/money.png">
+                <div id="cha">问卷调查</div>
+            </div>
+        </a>
+    </div><!--juan  固定部分结束-->
+    <div id="footer">
+        <div class="links">
+            <a href="#"> 关于我们</a>|
+            <a href="#">联系我们</a>|
+            <a href="#">人才招聘</a>|
+            <a href="#">商家入驻</a>|
+            <a href="#">广告服务</a>|
+            <a href="#">手机京东</a>|
+            <a href="#">友情链接</a>|
+            <a href="#">销售联盟</a>|
+            <a href="#">京东社区</a>|
+            <a href="#">京东公益</a>|
+            <a href="#">English Site</a>
+        </div>
+        <div class="copyright">
+            Copyright&#169;2004-2016&nbsp;&nbsp;京东JD.com&nbsp;版权所有
+        </div>
+    </div>
+
+    <!--遮罩层-->
+    <div id="maskAll" >
+        <div id="mask_layer">
+        </div>
+        <div id="mask" >
+            <div id="xieY"> <img src="imagesReg/zhez1.png" alt="" style="width:950px; height:598px;" onclick="mask()"></div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script type="text/javascript" src="register.js"></script>
+</html>

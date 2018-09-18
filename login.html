@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="login.css" type="text/css">
+</head>
+<body>
+<div id="box">
+    <div id="header">
+        <div id="logol"><a href="./index.html"><img src="imagesReg/logol.png"></a>
+        </div>
+        <div id="reg"> 欢迎登录</div>
+        <div id="login">
+            <div id="user"><a href="#"><img src="imglogin/q-icon.png"> 登录页面，调查问卷</a></div>
+        </div>
+    </div><!--。。。。。。。。。。。。。。。。。。。。。。login结束。。。。。。。。。。。。。。。。。。。。-->
+    <div id="session" style="background:#F1C812 ;">
+        <div id="img"><img src="imglogin/bcg.jpg" id="imgAll"></div>
+        <div id="dlBar">
+            <div id="hd" class="hd">
+                <ul>
+                    <li class="lTer"><a href="#">扫码登录</a></li>
+                    <li><a href="#">账户登录</a></li>
+                </ul>
+            </div><!--hd结束-->
+
+            <div id="con">
+                <div id="hs" style="display: block">
+                    <img src="imglogin/show.png" id="show" style=" left: 100px;">
+                    <img src="imglogin/shouji.png" id="sJi" style="visibility: hidden ">
+                    <div id="mask">
+                        <ul>
+                            <li>二维码已失效</li>
+                            <li><span id="sX">&nbsp;&nbsp;&nbsp;刷新&nbsp;&nbsp;&nbsp;</span></li>
+                        </ul>
+                    </div><!--mask结束-->
+                    <p id="p1">打开 <a id="sJ" href="#">手机京东</a> 扫描二维码</p>
+                    <!--<p id="p2">     </p>-->
+                    <ul id="fla">
+                        <li><p id="tP"></p>
+                            <p class="fC">免输入</p></li>
+                        <li><p id="tP1"></p>
+                            <p class="fC">更快</p></li>
+                        <li><p id="tP2"></p>
+                            <p class="fC">更安全</p></li>
+                    </ul>
+                </div><!--hs结束-->
+
+                <div id="dL">
+                        <div id="bCuo" style="visibility: hidden">
+                        <p id="cWq"></p><span id="fontS"></span>
+                        </div>
+                    <ul>
+                        <li>
+                            <p id="users"></p> <input type="search" placeholder="邮箱/用户名/已验证手机" style="display: block"
+                                                      class="inp" id="userName" onblur="panduan()">
+                        </li>
+                        <br>
+                        <li>
+                            <p id="password"></p> <input type="search" placeholder="密码" style="display: block"
+                                                         class="inp" id="pass" onblur="panduan()">
+                        </li>
+                    </ul>
+
+                    <p id="loseP"><a href="#">忘记密码</a></p>
+                    <div id="sub"><a href="mainPage.html">登录</a></div>
+                </div><!--dL结束-->
+            </div>
+            <div id="hf">
+                <form action="" id="myTab">
+                    <ul id="fla2">
+                        <li><p id="tP3"></p>
+                            <p class="fC2"><a href="#">QQ</a></p></li>
+                        <li><p id="tP4"></p>
+                            <p class="fC2"><a href="#">微信</a></p></li>
+                        <li id="rst"><p id="tP5"></p>
+                            <p class="fC3"><a href="register.html">立即注册</a></p></li>
+                    </ul>
+                </form>
+            </div><!--hf结束-->
+
+        </div><!--dlBar结束-->
+    </div><!--session结束-->
+    <div id="footer"><!--   。。。。。。。。。。。。。。。。。底部。。。。。。。。。。。。。。。。。-->
+        <div class="links">
+            <a href="#"> 关于我们</a>|
+            <a href="#">联系我们</a>|
+            <a href="#">人才招聘</a>|
+            <a href="#">商家入驻</a>|
+            <a href="#">广告服务</a>|
+            <a href="#">手机京东</a>|
+            <a href="#">友情链接</a>|
+            <a href="#">销售联盟</a>|
+            <a href="#">京东社区</a>|
+            <a href="#">京东公益</a>|
+            <a href="#">English Site</a>
+        </div>
+        <div class="copyright">
+            Copyright&#169;2004-2016&nbsp;&nbsp;京东JD.com&nbsp;版权所有
+        </div>
+    </div>
+</div><!--box结束-->
+</body>
+<script type="text/javascript" src="login.js"></script>
+</html>
